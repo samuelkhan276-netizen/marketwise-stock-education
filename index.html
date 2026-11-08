@@ -1,30 +1,98 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Explore stock market education, market concepts, investment fundamentals and risk awareness with MarketWise Academy.">
-<title>MarketWise Academy | Stock Market Education</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Mobile-first stock market education from MarketWise Academy. Learn market basics, investment concepts and risk awareness at your own pace.">
+<title>MarketWise Academy | Learn the Market</title>
 <style>
-:root{--bg:#07111f;--panel:#101f32;--muted:#a9b8ca;--text:#f4f7fb;--accent:#56d6b0;--line:#26384d}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{font-weight:800;letter-spacing:.3px;font-size:19px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:14px}.hero{padding:82px 0 76px;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.06;letter-spacing:-2px;margin:18px 0}.hero p{color:var(--muted);font-size:18px;max-width:620px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;padding:13px 19px;border-radius:9px;font-weight:750;background:var(--accent);color:#062019}.btn.alt{border:1px solid var(--line);background:transparent;color:var(--text)}.visual{border:1px solid var(--line);background:linear-gradient(145deg,#142b40,#0b1727);border-radius:22px;padding:25px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}.visual small{color:var(--muted)}.bars{height:130px;display:flex;align-items:end;gap:10px}.bars i{display:block;flex:1;border-radius:5px 5px 0 0;background:linear-gradient(#56d6b0,#1e8f83);opacity:.9}.bars i:nth-child(1){height:30%}.bars i:nth-child(2){height:46%}.bars i:nth-child(3){height:39%}.bars i:nth-child(4){height:62%}.bars i:nth-child(5){height:53%}.bars i:nth-child(6){height:78%}.bars i:nth-child(7){height:93%}.section{padding:70px 0}.section h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin:8px 0 14px}.lead{color:var(--muted);max-width:700px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:30px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:23px}.num{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:1px}.card h3{margin:10px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.step{padding:20px;border-left:2px solid var(--accent);background:#0c1a2a;border-radius:0 12px 12px 0}.step b{display:block;margin-bottom:7px}.step p{color:var(--muted);font-size:14px;margin:0}.community{background:linear-gradient(120deg,#102c36,#11223a);border:1px solid #28504f;border-radius:20px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:25px}.community p{color:var(--muted);max-width:650px;margin-bottom:0}.note{color:#91a3b8;font-size:12px}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 0}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.navlinks{display:none}.community{display:block}.community .btn{margin-top:20px}}
-@media(max-width:520px){.grid,.steps{grid-template-columns:1fr}.wrap{width:min(100% - 28px,1120px)}.community{padding:25px}}
+:root{color-scheme:dark;--bg:#07111f;--surface:#102035;--surface2:#0c1a2b;--text:#f4f7fb;--muted:#a8b8ca;--mint:#62e0bb;--line:#263a50}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(100% - 32px,560px);margin-inline:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(38,58,80,.7);padding-top:env(safe-area-inset-top)}
+.nav{min-height:62px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:17px;font-weight:850;letter-spacing:-.4px}.brand span{color:var(--mint)}
+.navtag{font-size:11px;color:var(--mint);border:1px solid rgba(98,224,187,.35);padding:5px 9px;border-radius:99px;letter-spacing:.5px}
+.hero{padding:46px 0 34px}
+.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+h1{font-size:clamp(36px,10vw,48px);line-height:1.08;letter-spacing:-1.8px;margin:14px 0 15px}
+h1 em{font-style:normal;color:var(--mint)}
+.hero p,.lead{color:var(--muted);font-size:15px;margin:0}
+.hero-panel{margin-top:25px;padding:19px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#142b40,#0b1727)}
+.panel-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.panel-top strong{font-size:14px}.panel-top span{font-size:10px;color:var(--mint);letter-spacing:1px}
+.chart{height:94px;display:flex;align-items:end;gap:8px;margin:15px 0 8px}
+.chart i{flex:1;display:block;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,#62e0bb,#207d79);opacity:.9}
+.chart i:nth-child(1){height:28%}.chart i:nth-child(2){height:44%}.chart i:nth-child(3){height:37%}.chart i:nth-child(4){height:60%}.chart i:nth-child(5){height:52%}.chart i:nth-child(6){height:77%}.chart i:nth-child(7){height:92%}
+.panel-note{font-size:10px;color:#8fa3b9}
+.section{padding:36px 0}
+h2{font-size:27px;line-height:1.16;letter-spacing:-.8px;margin:9px 0 10px}
+.topic-list{display:grid;gap:11px;margin-top:21px}
+.topic{display:grid;grid-template-columns:42px 1fr;gap:13px;padding:16px 15px;border:1px solid var(--line);border-radius:15px;background:var(--surface)}
+.topic-no{width:38px;height:38px;border-radius:11px;background:rgba(98,224,187,.1);color:var(--mint);display:grid;place-items:center;font-size:12px;font-weight:850}
+.topic h3{font-size:16px;margin:0 0 4px}.topic p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+.path{display:grid;gap:10px;margin-top:20px}
+.path-item{display:flex;gap:13px;align-items:flex-start;padding:14px;border-radius:13px;background:var(--surface2);border:1px solid rgba(38,58,80,.8)}
+.path-num{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:#062019;font-size:12px;font-weight:900}
+.path-item b{font-size:14px}.path-item p{font-size:12px;color:var(--muted);margin:3px 0 0}
+.community{margin:25px 0 12px;padding:22px 19px;border:1px solid #28504f;border-radius:18px;background:linear-gradient(145deg,#102c36,#11223a)}
+.community h2{font-size:24px}.community p{font-size:13px;color:var(--muted);margin:0}
+.soon{display:block;text-align:center;margin-top:18px;padding:13px 14px;border:1px solid #48616d;border-radius:11px;color:#c2d2df;font-size:13px;font-weight:750;background:rgba(255,255,255,.025)}
+.disclaimer{font-size:11px!important;line-height:1.55;color:#91a3b8!important;margin:15px 2px 0!important}
+footer{border-top:1px solid var(--line);padding:23px 0 calc(24px + env(safe-area-inset-bottom));font-size:11px;color:#91a3b8}
+footer p{margin:4px 0}
+@media(min-width:700px){.wrap{width:min(100% - 48px,560px)}.hero{padding-top:58px}.section{padding:44px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header class="wrap nav"><a class="brand" href="#">MarketWise <span>Academy</span></a><nav class="navlinks"><a href="#learn">What You'll Learn</a><a href="#path">Learning Path</a><a href="#community">Community</a></nav></header>
-<main>
-<section class="wrap hero"><div><div class="eyebrow">A clearer way to learn about markets</div><h1>Build your market knowledge. <span style="color:var(--accent)">One concept at a time.</span></h1><p>Explore the foundations of the stock market, understand common market concepts and develop a more informed perspective through structured financial education.</p><div class="actions"><a class="btn" href="#learn">Explore learning topics</a><a class="btn alt" href="#path">View learning path</a></div></div><div class="visual"><div><small>MARKET LEARNING • FOUNDATIONS</small><h3>Knowledge before decisions</h3><small>Learn concepts at your own pace</small></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Illustrative graphic for educational purposes only</small></div></section>
-<section class="section" id="learn"><div class="wrap"><div class="eyebrow">Learning topics</div><h2>Understand the building blocks of the market</h2><p class="lead">A practical introduction to key ideas that can help you read financial information with greater confidence.</p><div class="grid">
-<article class="card"><div class="num">01 / BASICS</div><h3>Stock Market Fundamentals</h3><p>Learn what shares represent, how exchanges work and the roles of market participants.</p></article>
-<article class="card"><div class="num">02 / CONTEXT</div><h3>Understanding Market Trends</h3><p>Explore broad market movements, economic indicators and factors that influence sentiment.</p></article>
-<article class="card"><div class="num">03 / CHARTS</div><h3>Charts & Technical Concepts</h3><p>Become familiar with price charts, volume, timeframes and commonly used terminology.</p></article>
-<article class="card"><div class="num">04 / PRINCIPLES</div><h3>Investment Fundamentals</h3><p>Study diversification, time horizon, asset classes and the relationship between risk and return.</p></article>
-<article class="card"><div class="num">05 / AWARENESS</div><h3>Risk Management</h3><p>Understand volatility, potential losses, position sizing concepts and the importance of planning.</p></article>
-<article class="card"><div class="num">06 / THINKING</div><h3>Informed Decision-Making</h3><p>Learn to evaluate information, identify uncertainty and avoid decisions based on hype.</p></article>
-</div></div></section>
-<section class="section" id="path"><div class="wrap"><div class="eyebrow">Your learning journey</div><h2>A simple path to build understanding</h2><p class="lead">Move through the topics step by step. Learn at a pace that works for you.</p><div class="steps"><div class="step"><b>01. Start with basics</b><p>Get familiar with market structure and essential terms.</p></div><div class="step"><b>02. Explore concepts</b><p>Study trends, charts and financial principles.</p></div><div class="step"><b>03. Learn about risk</b><p>Understand uncertainty and possible downside.</p></div><div class="step"><b>04. Keep learning</b><p>Build knowledge through thoughtful, ongoing study.</p></div></div></div></section>
-<section class="section" id="community"><div class="wrap"><div class="community"><div><div class="eyebrow">Learn together</div><h2>Continue your learning journey</h2><p>Our WhatsApp learning community link will be shared here soon. Check back for educational updates and learning resources.</p></div><a class="btn alt" href="#" aria-disabled="true" onclick="return false">WhatsApp group link coming soon</a></div><p class="note">The community is intended for educational discussion. No personalised investment recommendations or trading signals are provided.</p></div></section>
+<header><div class="wrap nav"><a class="brand" href="#top">MarketWise <span>Academy</span></a><span class="navtag">LEARN AT YOUR PACE</span></div></header>
+<main id="top" class="wrap">
+<section class="hero">
+<div class="eyebrow">Stock market education</div>
+<h1>Understand the market.<br><em>Build your knowledge.</em></h1>
+<p>A clear, structured introduction to stock market concepts, investment fundamentals and risk awareness — designed to help you learn one step at a time.</p>
+<div class="hero-panel">
+<div class="panel-top"><strong>Market learning, made clearer</strong><span>LEARN • EXPLORE • UNDERSTAND</span></div>
+<div class="chart" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="panel-note">Illustrative graphic only — not live market data or a trading signal.</div>
+</div>
+</section>
+<section class="section" id="learn">
+<div class="eyebrow">What you can learn</div>
+<h2>Explore the essentials</h2>
+<p class="lead">Build familiarity with the language and ideas used across financial markets.</p>
+<div class="topic-list">
+<article class="topic"><div class="topic-no">01</div><div><h3>Stock Market Basics</h3><p>Learn what shares are, how exchanges work and who participates in the market.</p></div></article>
+<article class="topic"><div class="topic-no">02</div><div><h3>Market Trends & Context</h3><p>Explore broad market movements, economic indicators and investor sentiment.</p></div></article>
+<article class="topic"><div class="topic-no">03</div><div><h3>Charts & Key Concepts</h3><p>Get familiar with price charts, trading volume, timeframes and common terminology.</p></div></article>
+<article class="topic"><div class="topic-no">04</div><div><h3>Investment Fundamentals</h3><p>Understand diversification, time horizon, asset classes and risk versus return.</p></div></article>
+<article class="topic"><div class="topic-no">05</div><div><h3>Risk Awareness</h3><p>Learn about volatility, potential losses and why planning matters.</p></div></article>
+<article class="topic"><div class="topic-no">06</div><div><h3>Informed Thinking</h3><p>Evaluate information carefully, recognise uncertainty and avoid decisions driven by hype.</p></div></article>
+</div>
+</section>
+<section class="section" id="path">
+<div class="eyebrow">A simple learning path</div>
+<h2>Learn step by step</h2>
+<div class="path">
+<div class="path-item"><span class="path-num">1</span><div><b>Start with the basics</b><p>Understand market structure and essential terms.</p></div></div>
+<div class="path-item"><span class="path-num">2</span><div><b>Explore market concepts</b><p>Study trends, charts and investment principles.</p></div></div>
+<div class="path-item"><span class="path-num">3</span><div><b>Understand risk</b><p>Learn why uncertainty and possible losses matter.</p></div></div>
+<div class="path-item"><span class="path-num">4</span><div><b>Keep building knowledge</b><p>Continue learning through thoughtful study.</p></div></div>
+</div>
+</section>
+<section class="community" id="community">
+<div class="eyebrow">Learning community</div>
+<h2>Keep learning with us</h2>
+<p>Information about the MarketWise Academy WhatsApp learning community will be shared here soon.</p>
+<div class="soon" aria-label="WhatsApp group link coming soon">WhatsApp Community · Coming Soon</div>
+<p class="disclaimer">For educational purposes only. This page does not provide investment advice, stock recommendations, trading signals or promises of returns. Investing involves risk, including possible loss of principal. Please make independent decisions based on your own circumstances.</p>
+</section>
+<footer><p>© 2026 MarketWise Academy</p><p>Educational content only. Privacy policy and contact details will be added once confirmed.</p></footer>
 </main>
-<footer class="wrap footer"><span>© 2026 MarketWise Academy. Educational information only.</span><span>Privacy policy and contact details will be added when confirmed.</span></footer>
-</body></html>
+</body>
+</html>
